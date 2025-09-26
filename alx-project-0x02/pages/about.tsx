@@ -1,4 +1,5 @@
 import Header from "@/components/layout/Header";
+import Button from "@/components/common/Button";
 
 const About: React.FC = () => {
     return (
@@ -12,9 +13,11 @@ const About: React.FC = () => {
                 <p className="mt-4 text-xl text-white">
                     We&apos;re glad you&apos;re here. Explore and enjoy your experience.
                 </p>
-                <button className="mt-6 px-6 py-3 bg-white text-blue-500 rounded-full font-semibold hover:bg-gray-200 transition">
-                    Continue
-                </button>
+                <div className="mt-6 flex flex-col items-center gap-4">
+                  <Button size="small" shape="rounded-sm">Small Button</Button>
+                  <Button size="medium" shape="rounded-md">Medium Button</Button>
+                  <Button size="large" shape="rounded-full">Large Button</Button>
+                </div>
             </div>
         </main>
         </>
